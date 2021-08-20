@@ -2,12 +2,12 @@
 
 ### Solo code challenge for computer vision candidates.
 
-For this programming challenge you are tasked with processing 3D point cloud data
+For this programming challenge you are tasked with processing 3D Point Cloud data
 using Python and Numpy. 
 Specifically, we'd like you to filter the outliers 
 (anything two standard deviations from the mean) out of the roof.
 
-We have provided a few helper functions to get you started for reading and writing `.ply` files.
+We have been provided a few helper functions to get you started reading and writing `.ply` files.
 
 You can visually test your results using a free software tool 
 called [MeshLab](https://www.meshlab.net/#download) to open `.ply` files
