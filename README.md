@@ -36,6 +36,6 @@ called [MeshLab](https://www.meshlab.net/#download) to open `.ply` files
 
 #### Deliverable:
 * Clone this repository
-* After completing your solution, push to your code to your own public repository
+* After completing your solution, push your code to your own public repository
 * Send us a link to your public repository
 * If you have any questions, please let us know
