@@ -39,3 +39,17 @@ called [MeshLab](https://www.meshlab.net/#download) to open `.ply` files
 * After completing your solution, push your code to your own public repository
 * Send us a link to your public repository
 * If you have any questions, please let us know
+
+#### Solution:
+The goal was to identify and remove outliers that were 2 or more standard deviations from the mean of the roof. The challenge was in the fact that the roof was multitiered for portions of the roof oriented in the same direction, therefore a single optimal plane could not be defined for all segments oriented in the same direction. Because of this I though it would be best to focus on defining outliers for a given color based on variation in the planes direction/orientation. Since the planes orientation is determined by the normal vectors, a multivariate quantity, I used the Mahalanobis distance of each normal vector. Mahalanobis distance is a good candidate because it is a multivariable generalization of the standard deviation from the mean measure.
+
+#### Data Directory Contents:
+* PointCloud.ply - Original point cloud
+* Results.ply - Original point cloud with the filtered outliers changed to black
+* unfiltered_colors.ply - Origianl poin cloud with original black noise removed
+* filtered_points.ply - Point cloud with new outliers and original black noise removed
+* noise_points.ply - Point cloud containing the new ouliers
+* segment[<r> <g> <b>].ply - Individual unique colored sements before filtering
+* filtered_segment[<r> <g> <b>].ply - Individual unique colored sements after filtering
+
+
